@@ -119,6 +119,10 @@ img {
 .header-list {
   display: flex;
 }
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
 
 .header-link {
   font-weight: 500; 
@@ -159,6 +163,7 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--scnd-txt-cl);
+  
 }
 /*Header icons*/
 
@@ -415,9 +420,11 @@ h1 {
 }
 .ftr-content {
   display: flex;
+  gap: 70px;
 }
 .ftr-container {
   align-items: center;
+  align-items: baseline;
 }
 address {
   font-style: oblique 0deg;
@@ -450,7 +457,9 @@ address {
 }
 /* Footer icon section*/
 .footer-icons {
-  align-items: baseline;
+  flex-direction: column;
+  display: flex;
+
 }
 .ftr-icon-txt {
   font-size: 14px;
