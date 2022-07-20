@@ -163,6 +163,8 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--scnd-txt-cl);
+  display: flex;
+  align-items: center;
   
 }
 /*Header icons*/
@@ -213,9 +215,10 @@ h1 {
 }
 .hero {
   max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(/images/page_1/bg_1p.png);
+  background-image: url(../images/page_1/bg_1p.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--dark-bg-cl);
@@ -361,19 +364,18 @@ h1 {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--wht-bg-cl);
+  color: var(--cl-icons);
   border-radius: 50%;
 }
 
 .socian-svg {
-  fill: var(--cl-icons);
+  fill: currentColor;
 }
 .link-social:hover {
   background-color: var(--accent-txt-cl);
+  color: var(--wht-bg-cl);
 }
-.link-social:hover .socian-svg {
-  fill: var(--wht-bg-cl);
-}
+
 
 /*Clients Section*/
 .six-svg {
@@ -399,16 +401,16 @@ h1 {
   height: 92px;
   border: 1px solid var(--cl-icons);
   border-radius: 4px;
+  color: var(--cl-icons);
 }
 .client-icon:hover {
   border: 1px solid var(--accent-txt-cl);
+  color: var(--accent-txt-cl);
 }
 .client-svg {
-  fill: var(--cl-icons);
+  fill: currentColor;
 }
-.client-icon:hover .client-svg {
-  fill: var(--accent-txt-cl);
-}
+
 /**
   |============================
   | Footer section
@@ -420,12 +422,9 @@ h1 {
 }
 .ftr-content {
   display: flex;
-  gap: 70px;
-}
-.ftr-container {
-  align-items: center;
   align-items: baseline;
 }
+
 address {
   font-style: oblique 0deg;
   margin-top: 20px;
@@ -457,9 +456,7 @@ address {
 }
 /* Footer icon section*/
 .footer-icons {
-  flex-direction: column;
-  display: flex;
-
+  margin-left: 70px;
 }
 .ftr-icon-txt {
   font-size: 14px;
@@ -474,6 +471,7 @@ letter-spacing: 0.03em;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-top: 20px;
 }
 .ftr-social {
   display: flex;
@@ -538,8 +536,12 @@ letter-spacing: 0.03em;
 .prtf-card {
   width: 370px;
 }
-.prtf-card:hover,
-.prtf-card:focus {
+
+.prtf-link {
+  display: block;
+}
+.prtf-link:hover,
+.prtf-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
